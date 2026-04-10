@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bienvenido -  Martínez gaming</title>
+    <style>
+        /* Estilos Generales */
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: white;
+            overflow: hidden; /* Evita barras de desplazamiento */
+        }
+
+        /* Fondo de Películas con superposición oscura */
+        .fondo-peliculas {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)), 
+                              url('https://images.unsplash.com/photo-1512070679279-8988d32161be?q=80&w=1920'); /* Imagen de cine genérica */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        /* Contenedor Principal */
+        .contenido {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 40px;
+            border-radius: 15px;
+            backdrop-filter: blur(5px); /* Efecto esmerilado */
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+
+        p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+            opacity: 0.9;
+        }
+
+        /* Botón de Chat */
+        .btn-chat {
+            background-color: #25D366; /* Color de WhatsApp */
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            font-size: 1.1rem;
+            font-weight: bold;
+            border-radius: 30px;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+        }
+
+        .btn-chat:hover {
+            background-color: #128C7E;
+            transform: translateY(-2px);
+        }
+
+        .btn-chat:active {
+            transform: translateY(1px);
+        }
+
+        /* Icono simple para el botón (puedes usar FontAwesome si prefieres) */
+        .icon-chat {
+            margin-right: 10px;
+            font-size: 1.3rem;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="fondo-peliculas">
+        <div class="contenido">
+            <h1>Bienvenido</h1>
+            <p>Adquiere tus cuentas de streaming de forma rápida y segura.</p>
+            
+            <a href="https://wa.me/+5804248365791?text=Hola,%20estoy%20interesado%20en%20una%20cuenta" class="btn-chat" target="_blank">
+                <span class="icon-chat">💬</span> Chatea en Privado conmigo
+            </a>
+
+        </div>
+    </div>
+
+</body>
+</html>
